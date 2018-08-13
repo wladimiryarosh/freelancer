@@ -31,6 +31,7 @@ header{
   color: #fff;
   text-align: center;
   text-transform: capitalize;
+	cursor: default;
 }
 .logo p{
     margin-top: 40px;
@@ -215,8 +216,7 @@ nav{
 	display: block;
 	height: 1px;
 	background: #9aa0ab;
-	margin: 0 auto;
-	margin-bottom: 30px;
+    margin: 0 auto 30px;
 }
 .social-icon-footer {
 	margin-bottom: 40px;
@@ -293,7 +293,7 @@ nav{
 		display: none;
 	}
 	header {
-		height: 100vh;
+		height: 500px;
 	}
 	.m-menu-link {
 		display: block;
@@ -304,17 +304,16 @@ nav{
 	}
 	.m-menu-link-close i{
 		display: block;
-		margin-top: 25px;
 		text-decoration: none;
 		font-size: 25px;
-		margin: 0 auto;
+		margin: 25px auto;
 	}
 	.m-menu { 
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		position: fixed;
-		left: 100;
+		left: 100px;
 		right: 0;
 		top: 0;
 		width: 55%;
@@ -322,10 +321,10 @@ nav{
 		background: #fa5c65;
 		text-align: center;
 		transition: 0.2s;
-		transform: translateX(100%)
+		transform: translateX(100%);
 	} 	
 	.m-menu-active {
-		transform: translateX(0%)
+		transform: translateX(0%);
 	}
 	.m-menu li {
 		border-bottom: 1px solid #314a5b;
@@ -369,9 +368,9 @@ nav{
 		background: #ececec36;
 		padding: 60px 100px;
 		border-radius: 35px;
-		-webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
-		box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 0 0 21px 0 rgba(0,0,0,0.75);
+		-moz-box-shadow: 0 0 21px 0 rgba(0,0,0,0.75);
+		box-shadow: 0 0 21px 0 rgba(0,0,0,0.75);
 	}
 	.portfolio {
 		display: flex;
@@ -395,7 +394,7 @@ nav{
 @media (max-width: 588px) {
 	.services_item {
 		padding: 60px 10px;
-}
+	}
 	.team_item {
 		display: flex;
 		flex-direction: column;
@@ -407,7 +406,9 @@ nav{
 	}
 }
 @media (max-width: 425px) {
-	.m-menu { 
+	.m-menu {
 		width: 100%;
+	}
 }
+
 	
